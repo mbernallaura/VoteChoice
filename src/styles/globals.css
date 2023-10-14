@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Zen+Dots&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --violeta: #6009AE; 
+    --secondaryWhite: #F8F8F8;
+    --secondaryBlack: #121212
+}
+/* 
+body {
+     background-color: var(--secondaryWhite);
+    color: var(--secondaryBlack); 
+} */
+
+
+
+.container-global {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-inline: auto;
+    width: min(90%,70.5rem);
+}
+
+.panelLi.active{
+    background-color: #F8F8F8;
+}
+
+.panelLi.active a{
+    color: var(--violeta);
+}
+
+.open,
+.panelLi.active .close{
+    display: block;
+}
+
+.close,
+.panelLi.active .open{
+    display: none;
+}
